@@ -1,24 +1,9 @@
 .venv/
 venv/
-ENV/
-env/
-
-# Кэш Python
 **/__pycache__/
 *.pyc
-*.pyo
-*.pyd
 .pytest_cache/
-
-# Результаты тестов и отчеты Allure
 allure-results/
 allure-report/
-
-# Настройки VS Code и других IDE
 .vscode/
-.idea/
-
-# Логи и системные файлы
 *.log
-.DS_Store
-Thumbs.db
