@@ -1,5 +1,5 @@
 import pytest
-import data
+import helpers
 from api_client import ScooterApiClient
 
 @pytest.fixture(scope="function")
@@ -9,7 +9,7 @@ def api_client():
 @pytest.fixture(scope="function")
 def created_courier(api_client):
     """Фикстура создает курьера перед тестом и гарантированно удаляет его после"""
-    payload = data.generate_courier_data()
+    payload = helpers.generate_courier_data()
     api_client.create_courier(payload)
     
     yield payload  # Передаем данные курьера в тест
